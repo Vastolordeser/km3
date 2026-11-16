@@ -114,6 +114,14 @@
         .theory-example .ru { font-size: 14px; color: var(--text-muted); font-style: italic; }
         .theory-example b { color: var(--accent-blue); text-decoration: underline; }
 
+        /* --- Упражнения --- */
+        .exercise-block { margin-bottom: 30px; }
+        .exercise-title { font-size: 18px; font-weight: 700; margin-bottom: 15px; color: var(--text-main); border-bottom: 2px solid var(--accent-blue); padding-bottom: 5px; display: inline-block; }
+        .exercise-item { background: var(--card-bg); padding: 15px; border-radius: 10px; margin-bottom: 10px; border: 1px solid var(--border-color); }
+        .exercise-en { font-size: 16px; margin-bottom: 5px; }
+        .exercise-ru { font-size: 14px; color: var(--text-muted); margin-bottom: 10px; font-style: italic; }
+        .exercise-analysis { font-size: 14px; background: #f8f9fc; padding: 8px 12px; border-radius: 6px; border-left: 3px solid var(--accent-green); }
+
         /* --- Тесты --- */
         .tests-grid {
             display: grid;
@@ -181,6 +189,7 @@
         <button class="tab-btn active" onclick="switchTab('tab-sentences', this)">📖 Предложения</button>
         <button class="tab-btn" onclick="switchTab('tab-words', this)">📚 Слова</button>
         <button class="tab-btn" onclick="switchTab('tab-theory', this)">📘 Теория</button>
+        <button class="tab-btn" onclick="switchTab('tab-exercises', this)">✍️ Упражнения</button>
         <button class="tab-btn" onclick="switchTab('tab-tests', this)">🧠 Тесты</button>
     </div>
 </div>
@@ -590,6 +599,469 @@
                 <div class="theory-example">
                     <div class="en">We stayed there <b>for</b> two hours <b>during</b> the storm.</div>
                     <div class="ru">Мы оставались там два часа во время шторма (Время).</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= УПРАЖНЕНИЯ ================= -->
+    <div id="tab-exercises" class="main-tab-content hidden">
+        <div class="sub-tabs">
+            <button class="sub-tab-btn active" onclick="switchSubTab('ex-unit-7', this, 'tab-exercises')">Unit 7</button>
+            <button class="sub-tab-btn" onclick="switchSubTab('ex-unit-8', this, 'tab-exercises')">Unit 8</button>
+            <button class="sub-tab-btn" onclick="switchSubTab('ex-unit-9', this, 'tab-exercises')">Unit 9</button>
+        </div>
+
+        <!-- ЮНИТ 7 -->
+        <div id="ex-unit-7" class="sub-tab-content">
+            <div class="exercise-block">
+                <div class="exercise-title">Ex. 1. Translate the following sentences paying attention to Gerund functions.</div>
+                
+                <div class="exercise-item">
+                    <div class="exercise-en">1. A boiler is a device for <b>generating</b> steam.</div>
+                    <div class="exercise-ru">(Котёл — это устройство для генерации пара.)</div>
+                    <div class="exercise-analysis"><b>generating</b> — Gerund, Indefinite, Active, функция: <i>Определение (с предлогом for)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">2. Our aim is <b>solving</b> this complex problem.</div>
+                    <div class="exercise-ru">(Наша цель — решение этой сложной проблемы.)</div>
+                    <div class="exercise-analysis"><b>solving</b> — Gerund, Indefinite, Active, функция: <i>Часть составного именного сказуемого</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">3. John Parsons had the idea of <b>reducing</b> the steam pressure and speed by causing the whole expansion of the steam to take place in stages.</div>
+                    <div class="exercise-ru">(Джон Парсонс выдвинул идею снижения давления и скорости пара путем обеспечения расширения всего пара по стадиям.)</div>
+                    <div class="exercise-analysis"><b>reducing</b> — Gerund, Indefinite, Active, функция: <i>Определение (с предлогом of)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">4. The functions of <b>heating</b>, <b>ventilating</b>, and air-conditioning are interrelated when we need to provide thermal comfort.</div>
+                    <div class="exercise-ru">(Функции отопления, вентиляции и кондиционирования взаимосвязаны, когда нам нужно обеспечить тепловой комфорт.)</div>
+                    <div class="exercise-analysis"><b>heating, ventilating</b> — Gerund, Indefinite, Active, функция: <i>Определение (с предлогом of)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">5. Gustaf Patrik de Laval connected an electric generator to his turbine after he had succeeded in <b>reducing</b> the speed of rotation to 300 r.p.m.</div>
+                    <div class="exercise-ru">(Густав Патрик де Лаваль подключил электрический генератор к своей турбине после того, как ему удалось снизить скорость вращения до 300 об/мин.)</div>
+                    <div class="exercise-analysis"><b>reducing</b> — Gerund, Indefinite, Active, функция: <i>Косвенное (предложное) дополнение (после succeeded in)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">6. <b>Proving</b> the existence of radio waves in space was one of the greatest scientific achievements.</div>
+                    <div class="exercise-ru">(Доказательство существования радиоволн в космосе было одним из величайших научных достижений.)</div>
+                    <div class="exercise-analysis"><b>Proving</b> — Gerund, Indefinite, Active, функция: <i>Подлежащее</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">7. It is most important to remember that electricity is only a means of <b>distributing</b> energy, <b>carrying</b> it from the place where it is produced to the places where it is used.</div>
+                    <div class="exercise-ru">(Важно помнить, что электричество — это всего лишь средство распределения энергии, переноса её из места производства в места использования.)</div>
+                    <div class="exercise-analysis"><b>distributing</b> — Gerund, Indefinite, Active, функция: <i>Определение (с предлогом of)</i>; <b>carrying</b> — Gerund, Indefinite, Active, функция: <i>Обстоятельство (после запятой)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">8. <b>Using</b> the new method makes possible the increase of accuracy and speed of computational results.</div>
+                    <div class="exercise-ru">(Использование нового метода делает возможным увеличение точности и скорости вычислительных результатов.)</div>
+                    <div class="exercise-analysis"><b>Using</b> — Gerund, Indefinite, Active, функция: <i>Подлежащее</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">9. By <b>raising</b> the voltage, it is possible to transmit a certain amount of energy.</div>
+                    <div class="exercise-ru">(Повышая напряжение, можно передать определенное количество энергии.)</div>
+                    <div class="exercise-analysis"><b>raising</b> — Gerund, Indefinite, Active, функция: <i>Обстоятельство (после предлога by)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">10. The cooling water is pumped to a cooling tower after <b>passing</b> through the condenser.</div>
+                    <div class="exercise-ru">(Охлаждающая вода перекачивается на градирню после прохождения через конденсатор.)</div>
+                    <div class="exercise-analysis"><b>passing</b> — Gerund, Indefinite, Active, функция: <i>Обстоятельство (после предлога after)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">11. The Society for <b>testing</b> materials had adopted a test procedure for <b>determining</b> the ignition temperature of liquid combustibles.</div>
+                    <div class="exercise-ru">(Общество по испытанию материалов приняло процедуру испытания для определения температуры воспламенения жидких горючих веществ.)</div>
+                    <div class="exercise-analysis"><b>testing</b> — Gerund, Indefinite, Active, функция: <i>Определение (с предлогом for)</i>; <b>determining</b> — Gerund, Indefinite, Active, функция: <i>Определение (с предлогом for)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">12. <b>Investigating</b> the possibility of <b>recovering</b> waste heat is an important engineering task.</div>
+                    <div class="exercise-ru">(Исследование возможности восстановления отработанного тепла является важной инженерной задачей.)</div>
+                    <div class="exercise-analysis"><b>Investigating</b> — Gerund, Indefinite, Active, функция: <i>Подлежащее</i>; <b>recovering</b> — Gerund, Indefinite, Active, функция: <i>Определение (с предлогом of)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">13. If steam is required for industrial <b>processing</b>, a turbine may be modified by <b>creating</b> steam flows from various stages of the turbine.</div>
+                    <div class="exercise-ru">(Если пар требуется для промышленной переработки, турбина может быть модифицирована путем создания потоков пара с различных ступеней турбины.)</div>
+                    <div class="exercise-analysis"><b>processing</b> — Gerund, Indefinite, Active, функция: <i>Определение (с предлогом for)</i>; <b>creating</b> — Gerund, Indefinite, Active, функция: <i>Обстоятельство (после предлога by)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">14. <b>Being</b> out in the open field during a thunderstorm is dangerous.</div>
+                    <div class="exercise-ru">(Находиться в открытом поле во время грозы опасно.)</div>
+                    <div class="exercise-analysis"><b>Being</b> — Gerund, Indefinite, Active, функция: <i>Подлежащее</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">15. <b>Using</b> state-of-the-art equipment and more complex cycles gives better theoretical efficiencies.</div>
+                    <div class="exercise-ru">(Использование современного оборудования и более сложных циклов дает лучшие теоретические КПД.)</div>
+                    <div class="exercise-analysis"><b>Using</b> — Gerund, Indefinite, Active, функция: <i>Подлежащее</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">16. Proper <b>calculating</b> of the circulation loop provides reliable natural circulation in a drum boiler.</div>
+                    <div class="exercise-ru">(Правильный расчет циркуляционного контура обеспечивает надежную естественную циркуляцию в барабанном котле.)</div>
+                    <div class="exercise-analysis"><b>calculating</b> — Gerund, Indefinite, Active, функция: <i>Подлежащее</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">17. Better theoretical efficiencies are possible by <b>using</b> upgraded equipment in more complex cycles.</div>
+                    <div class="exercise-ru">(Лучшие теоретические КПД возможны при использовании модернизированного оборудования в более сложных циклах.)</div>
+                    <div class="exercise-analysis"><b>using</b> — Gerund, Indefinite, Active, функция: <i>Обстоятельство (после предлога by)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">18. In <b>condensing</b> the steam gives up heat to the cooling water.</div>
+                    <div class="exercise-ru">(При конденсации пар отдает тепло охлаждающей воде.)</div>
+                    <div class="exercise-analysis"><b>condensing</b> — Gerund, Indefinite, Active, функция: <i>Обстоятельство (после предлога in)</i>.</div>
+                </div>
+            </div>
+
+            <div class="exercise-block">
+                <div class="exercise-title">Ex. 2. Use the verb in brackets as a Gerund with an appropriate preposition: after (1), of (3), without (2), by (2), on (1), in (3), for (2). Define the functions of the Gerund and translate the sentences into Russian.</div>
+                
+                <div class="exercise-item">
+                    <div class="exercise-en">1. Automobiles, trams, airplanes are moved <b>by changing</b> heat energy to other forms of energy.</div>
+                    <div class="exercise-ru">(Автомобили, трамваи, самолеты движутся путем преобразования тепловой энергии в другие формы энергии.)</div>
+                    <div class="exercise-analysis"><b>changing</b> — Gerund, Indefinite, Active, функция: <i>Обстоятельство (после предлога by)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">2. <b>Comparing</b> the data obtained by different tests is the only means <b>of solving</b> many problems.</div>
+                    <div class="exercise-ru">(Сравнение данных, полученных разными тестами, является единственным средством решения многих проблем.)</div>
+                    <div class="exercise-analysis"><b>Comparing</b> — Gerund, Indefinite, Active, функция: <i>Подлежащее</i>; <b>solving</b> — Gerund, Indefinite, Active, функция: <i>Определение (с предлогом of)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">3. Ongoing research is aimed <b>at improving</b> the quality and availability of the measurements.</div>
+                    <div class="exercise-ru">(Текущие исследования направлены на улучшение качества и доступности измерений.)</div>
+                    <div class="exercise-analysis"><b>improving</b> — Gerund, Indefinite, Active, функция: <i>Косвенное (предложное) дополнение (после aimed at)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">4. <b>After experimenting</b> for two years, in 1802, William Murdock persuaded his employer, Watt, to let him illuminate the Soho factory by gaslight.</div>
+                    <div class="exercise-ru">(После двух лет экспериментов, в 1802 году, Уильям Мёрдок убедил своего работодателя, Уатта, позволить ему осветить фабрику Сохо газовым светом.)</div>
+                    <div class="exercise-analysis"><b>experimenting</b> — Gerund, Indefinite, Active, функция: <i>Обстоятельство (после предлога after)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">5. This method <b>of storing</b> flue gases became criticized.</div>
+                    <div class="exercise-ru">(Этот метод хранения дымовых газов подвергся критике.)</div>
+                    <div class="exercise-analysis"><b>storing</b> — Gerund, Indefinite, Active, функция: <i>Определение (с предлогом of)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">6. <b>Without achieving</b> negative results they stopped the research.</div>
+                    <div class="exercise-ru">(Не достигнув отрицательных результатов, они остановили исследование.)</div>
+                    <div class="exercise-analysis"><b>achieving</b> — Gerund, Indefinite, Active, функция: <i>Обстоятельство (после предлога without)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">7. <b>By transmitting</b> error-correction codes an adaptive system can resist interference.</div>
+                    <div class="exercise-ru">(Передавая коды исправления ошибок, адаптивная система может противостоять помехам.)</div>
+                    <div class="exercise-analysis"><b>transmitting</b> — Gerund, Indefinite, Active, функция: <i>Обстоятельство (после предлога by)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">8. They managed to make an experiment <b>for increasing</b> the power of the circuit.</div>
+                    <div class="exercise-ru">(Им удалось провести эксперимент для увеличения мощности цепи.)</div>
+                    <div class="exercise-analysis"><b>increasing</b> — Gerund, Indefinite, Active, функция: <i>Определение (с предлогом for)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">9. I will work at a thermal power plant as an engineer <b>after graduating</b> from the University.</div>
+                    <div class="exercise-ru">(Я буду работать на тепловой электростанции инженером после окончания университета.)</div>
+                    <div class="exercise-analysis"><b>graduating</b> — Gerund, Indefinite, Active, функция: <i>Обстоятельство (после предлога after)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">10. Appliances <b>for converting</b> energy from one form to another are called engines.</div>
+                    <div class="exercise-ru">(Устройства для преобразования энергии из одной формы в другую называются двигателями.)</div>
+                    <div class="exercise-analysis"><b>converting</b> — Gerund, Indefinite, Active, функция: <i>Определение (с предлогом for)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">11. The tubular air heater is constructed <b>for expanding</b> vertical tubes into parallel tube sheets.</div>
+                    <div class="exercise-ru">(Трубчатый воздухонагреватель сконструирован для расширения вертикальных труб в параллельные трубные решетки.)</div>
+                    <div class="exercise-analysis"><b>expanding</b> — Gerund, Indefinite, Active, функция: <i>Определение (с предлогом for)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">12. They succeeded <b>in obtaining</b> good results <b>by using</b> this computer.</div>
+                    <div class="exercise-ru">(Им удалось получить хорошие результаты, используя этот компьютер.)</div>
+                    <div class="exercise-analysis"><b>obtaining</b> — Gerund, Indefinite, Active, функция: <i>Косвенное (предложное) дополнение (после succeeded in)</i>; <b>using</b> — Gerund, Indefinite, Active, функция: <i>Обстоятельство (после предлога by)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">13. <b>Without developing</b> the new method, they couldn't achieve good results.</div>
+                    <div class="exercise-ru">(Не разработав новый метод, они не смогли достичь хороших результатов.)</div>
+                    <div class="exercise-analysis"><b>developing</b> — Gerund, Indefinite, Active, функция: <i>Обстоятельство (после предлога without)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">14. Thousands of scientists, <b>using</b> the most modern equipment, are engaged <b>in studying</b> this phenomenon.</div>
+                    <div class="exercise-ru">(Тысячи ученых, использующих самое современное оборудование, занимаются изучением этого явления.)</div>
+                    <div class="exercise-analysis"><b>using</b> — Gerund, Indefinite, Active, функция: <i>Обстоятельство (после предлога using)</i>; <b>studying</b> — Gerund, Indefinite, Active, функция: <i>Косвенное (предложное) дополнение (после engaged in)</i>.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ЮНИТ 8 -->
+        <div id="ex-unit-8" class="sub-tab-content hidden">
+            <div class="exercise-block">
+                <div class="exercise-title">Ex. 1. Translate the following sentences paying attention to Gerundial Constructions, pointing out the Gerund and defining its function.</div>
+                
+                <div class="exercise-item">
+                    <div class="exercise-en">1. There was no hope of <b>their finishing</b> the experiment on time.</div>
+                    <div class="exercise-ru">(Не было надежды на то, что они закончат эксперимент вовремя.)</div>
+                    <div class="exercise-analysis"><b>their finishing</b> — Независимый герундиальный оборот. Gerund: Indefinite, Active, функция: <i>Определение (с предлогом of)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">2. We heard of <b>his having started</b> a very important experiment in your laboratory.</div>
+                    <div class="exercise-ru">(Мы слышали о том, что он начал очень важный эксперимент в вашей лаборатории.)</div>
+                    <div class="exercise-analysis"><b>his having started</b> — Независимый герундиальный оборот. Gerund: Perfect, Active, функция: <i>Косвенное (предложное) дополнение</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">3. We know of <b>most metals being</b> good conductors of heat and electricity.</div>
+                    <div class="exercise-ru">(Мы знаем, что большинство металлов являются хорошими проводниками тепла и электричества.)</div>
+                    <div class="exercise-analysis"><b>most metals being</b> — Независимый герундиальный оборот. Gerund: Indefinite, Active, функция: <i>Косвенное (предложное) дополнение</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">4. There is no hope of <b>our getting</b> a complete analysis within 10 days.</div>
+                    <div class="exercise-ru">(Нет надежды на то, что мы получим полный анализ в течение 10 дней.)</div>
+                    <div class="exercise-analysis"><b>our getting</b> — Независимый герундиальный оборот. Gerund: Indefinite, Active, функция: <i>Определение (с предлогом of)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">5. <b>His having obtained</b> a residue at such a temperature was a great success.</div>
+                    <div class="exercise-ru">(То, что он получил остаток при такой температуре, было большим успехом.)</div>
+                    <div class="exercise-analysis"><b>His having obtained</b> — Независимый герундиальный оборот. Gerund: Perfect, Active, функция: <i>Подлежащее</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">6. The assistant apologized for <b>his having made</b> a mistake in the calculations.</div>
+                    <div class="exercise-ru">(Ассистент извинился за то, что допустил ошибку в расчетах.)</div>
+                    <div class="exercise-analysis"><b>his having made</b> — Независимый герундиальный оборот. Gerund: Perfect, Active, функция: <i>Косвенное (предложное) дополнение (после for)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">7. They knew about <b>our having published</b> the results of the tests.</div>
+                    <div class="exercise-ru">(Они знали о том, что мы опубликовали результаты тестов.)</div>
+                    <div class="exercise-analysis"><b>our having published</b> — Независимый герундиальный оборот. Gerund: Perfect, Active, функция: <i>Косвенное (предложное) дополнение (после about)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">8. In spite of <b>semiconductor diodes being</b> so important, they were little used at the beginning of the last century.</div>
+                    <div class="exercise-ru">(Несмотря на то, что полупроводниковые диоды так важны, они мало использовались в начале прошлого века.)</div>
+                    <div class="exercise-analysis"><b>semiconductor diodes being</b> — Независимый герундиальный оборот. Gerund: Indefinite, Active, функция: <i>Обстоятельство (после предлога in spite of)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">9. We knew of <b>atomic energy having been used</b> for several years for heating houses in a small region in the UK.</div>
+                    <div class="exercise-ru">(Мы знали о том, что атомная энергия использовалась в течение нескольких лет для отопления домов в небольшом регионе Великобритании.)</div>
+                    <div class="exercise-analysis"><b>atomic energy having been used</b> — Независимый герундиальный оборот. Gerund: Perfect, Passive, функция: <i>Косвенное (предложное) дополнение</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">10. The professor knew about <b>the students' going</b> to the power plant.</div>
+                    <div class="exercise-ru">(Профессор знал о том, что студенты идут на электростанцию.)</div>
+                    <div class="exercise-analysis"><b>the students' going</b> — Независимый герундиальный оборот. Gerund: Indefinite, Active, функция: <i>Косвенное (предложное) дополнение (после about)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">11. <b>Franklin's having worked</b> in the field of electricity is a well-known fact.</div>
+                    <div class="exercise-ru">(То, что Франклин работал в области электричества, является общеизвестным фактом.)</div>
+                    <div class="exercise-analysis"><b>Franklin's having worked</b> — Независимый герундиальный оборот. Gerund: Perfect, Active, функция: <i>Подлежащее</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">12. We were informed of <b>the electric furnace being</b> an ideal melting and refining unit for the steel industry.</div>
+                    <div class="exercise-ru">(Нас проинформировали о том, что электрическая печь является идеальным плавильным и рафинирующим агрегатом для сталелитейной промышленности.)</div>
+                    <div class="exercise-analysis"><b>the electric furnace being</b> — Независимый герундиальный оборот. Gerund: Indefinite, Active, функция: <i>Косвенное (предложное) дополнение</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">13. Everybody heard of <b>this new device having been implemented</b> into practice.</div>
+                    <div class="exercise-ru">(Все слышали о том, что это новое устройство было внедрено в практику.)</div>
+                    <div class="exercise-analysis"><b>this new device having been implemented</b> — Независимый герундиальный оборот. Gerund: Perfect, Passive, функция: <i>Косвенное (предложное) дополнение</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">14. <b>His having done</b> numerous experiments proved the hypothesis.</div>
+                    <div class="exercise-ru">(То, что он провел множество экспериментов, подтвердило гипотезу.)</div>
+                    <div class="exercise-analysis"><b>His having done</b> — Независимый герундиальный оборот. Gerund: Perfect, Active, функция: <i>Подлежащее</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">15. <b>Student's knowing</b> the rule helped him to pass the exam successfully.</div>
+                    <div class="exercise-ru">(То, что студент знал правило, помогло ему успешно сдать экзамен.)</div>
+                    <div class="exercise-analysis"><b>Student's knowing</b> — Независимый герундиальный оборот. Gerund: Indefinite, Active, функция: <i>Подлежащее</i>.</div>
+                </div>
+            </div>
+
+            <div class="exercise-block">
+                <div class="exercise-title">Ex. 2. Transform the sentences using the Gerundial Construction, define its function.</div>
+                
+                <div class="exercise-item">
+                    <div class="exercise-en">1. We know that all thermoelectric power generators have the same basic configuration.</div>
+                    <div class="exercise-ru">(Мы знаем, что все термоэлектрические генераторы имеют одинаковую базовую конфигурацию.)</div>
+                    <div class="exercise-analysis">**We know of all thermoelectric power generators having the same basic configuration.** — Gerund: Indefinite, Active, функция: <i>Косвенное (предложное) дополнение</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">2. Newton stated his laws of motion. It is very important for modern science.</div>
+                    <div class="exercise-ru">(Ньютон сформулировал свои законы движения. Это очень важно для современной науки.)</div>
+                    <div class="exercise-analysis">**Newton's having stated his laws of motion is very important for modern science.** — Gerund: Perfect, Active, функция: <i>Подлежащее</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">3. We know that any object is prevented from moving at constant speed by air friction.</div>
+                    <div class="exercise-ru">(Мы знаем, что любой объект не может двигаться с постоянной скоростью из-за трения воздуха.)</div>
+                    <div class="exercise-analysis">**We know of any object being prevented from moving at constant speed by air friction.** — Gerund: Indefinite, Passive, функция: <i>Косвенное (предложное) дополнение</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">4. The direction of energy flow is reversible. It is a unique aspect of thermoelectric energy conversion.</div>
+                    <div class="exercise-ru">(Направление потока энергии является обратимым. Это уникальный аспект термоэлектрического преобразования энергии.)</div>
+                    <div class="exercise-analysis">**The direction of energy flow being reversible is a unique aspect of thermoelectric energy conversion.** — Gerund: Indefinite, Active, функция: <i>Подлежащее</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">5. We know that he has spent more than 20 years of scientific thinking before finally formulating the ideas on paper.</div>
+                    <div class="exercise-ru">(Мы знаем, что он потратил более 20 лет научных размышлений, прежде чем окончательно сформулировал идеи на бумаге.)</div>
+                    <div class="exercise-analysis">**We know of his having spent more than 20 years of scientific thinking before finally formulating the ideas on paper.** — Gerund: Perfect, Active, функция: <i>Косвенное (предложное) дополнение</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">6. Thermoelectric device materials are relatively immune to nuclear radiation. It is an important property for many unattended and remote applications.</div>
+                    <div class="exercise-ru">(Материалы термоэлектрических устройств относительно невосприимчивы к ядерному излучению. Это важное свойство для многих автономных и удаленных приложений.)</div>
+                    <div class="exercise-analysis">**Thermoelectric device materials being relatively immune to nuclear radiation is an important property for many unattended and remote applications.** — Gerund: Indefinite, Active, функция: <i>Подлежащее</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">7. We can directly convert a temperature difference to electricity if we apply the Seebeck effect.</div>
+                    <div class="exercise-ru">(Мы можем напрямую преобразовать разницу температур в электричество, если применим эффект Зеебека.)</div>
+                    <div class="exercise-analysis">**Our directly converting a temperature difference to electricity depends on applying the Seebeck effect.** — Gerund: Indefinite, Active, функция: <i>Подлежащее</i> (в составе оборота).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">8. His article was published. It is a great success.</div>
+                    <div class="exercise-ru">(Его статья была опубликована. Это большой успех.)</div>
+                    <div class="exercise-analysis">**His article being published is a great success.** — Gerund: Indefinite, Passive, функция: <i>Подлежащее</i> (в составе оборота).</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ЮНИТ 9 -->
+        <div id="ex-unit-9" class="sub-tab-content hidden">
+            <div class="exercise-block">
+                <div class="exercise-title">Ex. 1. Read and translate the following sentences paying attention to the set expressions.</div>
+                
+                <div class="exercise-item">
+                    <div class="exercise-en">1. <b>As a matter of fact</b>, the methods used in measuring activities depend upon well-known equilibrium laws.</div>
+                    <div class="exercise-ru">(На самом деле, методы, используемые при измерении активности, зависят от хорошо известных законов равновесия.)</div>
+                    <div class="exercise-analysis"><b>As a matter of fact</b> — устойчивое выражение (на самом деле, фактически).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">2. <b>No matter what</b> material the cathode may be made of, the electrons are always given off.</div>
+                    <div class="exercise-ru">(Из какого бы материала ни был сделан катод, электроны всегда испускаются.)</div>
+                    <div class="exercise-analysis"><b>No matter what</b> — устойчивое выражение (независимо от того, какой / из какого бы ни).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">3. Our most accurate knowledge about climate sensitivity, <b>at least so far</b>, is based on empirical data from the earth's history.</div>
+                    <div class="exercise-ru">(Наши самые точные знания о чувствительности климата, по крайней мере на данный момент, основаны на эмпирических данных из истории Земли.)</div>
+                    <div class="exercise-analysis"><b>at least</b> — устойчивое выражение (по крайней мере); <b>so far</b> — устойчивое выражение (на данный момент, пока).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">4. <b>In case</b> one end of the wire is made positive by removing electrons from it, the shortage of electrons at this end will cause free electrons to be attracted toward it.</div>
+                    <div class="exercise-ru">(В случае, если один конец провода становится положительным из-за удаления из него электронов, недостаток электронов на этом конце заставит свободные электроны притягиваться к нему.)</div>
+                    <div class="exercise-analysis"><b>In case</b> — составной союз (в случае, если).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">5. <b>In fact</b>, the heavier the substance, the more complicated is the atom.</div>
+                    <div class="exercise-ru">(Фактически, чем тяжелее вещество, тем сложнее атом.)</div>
+                    <div class="exercise-analysis"><b>In fact</b> — устойчивое выражение (фактически, на самом деле).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">6. Steam may be passed into an engine to produce mechanical energy and the latter <b>in its turn</b> may drive a dynamo to produce electrical energy.</div>
+                    <div class="exercise-ru">(Пар может подаваться в двигатель для производства механической энергии, а последняя, в свою очередь, может приводить в действие динамо-машину для производства электрической энергии.)</div>
+                    <div class="exercise-analysis"><b>in its turn</b> — устойчивое выражение (в свою очередь).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">7. The efficiency of the machine is 80%, <b>the rest of</b> the power being lost in the resistance to friction.</div>
+                    <div class="exercise-ru">(КПД машины составляет 80%, остаток мощности теряется на сопротивление трению.)</div>
+                    <div class="exercise-analysis"><b>the rest of</b> — устойчивое выражение (остаток чего-либо); **being lost** — причастие, часть независимого причастного оборота.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">8. The question of setting a unit of e.m.f. can <b>be dealt with</b> in the same manner as for current.</div>
+                    <div class="exercise-ru">(Вопрос установления единицы ЭДС можно рассматривать так же, как и для тока.)</div>
+                    <div class="exercise-analysis"><b>be dealt with</b> — устойчивое выражение *to deal with* (иметь дело с, рассматривать).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">9. <b>At any rate</b> one cannot carry out experiments without lab technique having been mastered well enough.</div>
+                    <div class="exercise-ru">(В любом случае нельзя проводить эксперименты без достаточно хорошего освоения лабораторной техники.)</div>
+                    <div class="exercise-analysis"><b>At any rate</b> — устойчивое выражение (в любом случае, так или иначе); **having been mastered** — герундий, Perfect Passive, функция: <i>Обстоятельство (после предлога without)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">10. <b>According to</b> historical data, Democritus thought all substances to be made up of tiny particles which could not be further divided.</div>
+                    <div class="exercise-ru">(Согласно историческим данным, Демокрит считал, что все вещества состоят из мельчайших частиц, которые не могут быть разделены дальше.)</div>
+                    <div class="exercise-analysis"><b>According to</b> — составной предлог (согласно, в соответствии с).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">11. The modern diodes differ but little from the early models <b>in so far as</b> its principle of operation is concerned.</div>
+                    <div class="exercise-ru">(Современные диоды мало чем отличаются от ранних моделей, поскольку это касается принципа их работы.)</div>
+                    <div class="exercise-analysis"><b>in so far as</b> — составной союз (поскольку, в той мере, в какой).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">12. <b>Just as</b> there are some solids which conduct electricity much better than others, so among liquids we have good and poor conductors of electricity.</div>
+                    <div class="exercise-ru">(Точно так же, как есть некоторые твердые тела, которые проводят электричество намного лучше других, так и среди жидкостей у нас есть хорошие и плохие проводники электричества.)</div>
+                    <div class="exercise-analysis"><b>Just as</b> — устойчивое выражение (точно так же, как; подобно тому, как).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">13. When a gas expands against an external pressure it does work <b>at the expense of</b> the kinetic energy of its molecules.</div>
+                    <div class="exercise-ru">(Когда газ расширяется против внешнего давления, он совершает работу за счет кинетической энергии своих молекул.)</div>
+                    <div class="exercise-analysis"><b>at the expense of</b> — устойчивое выражение (за счет, ценой).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">14. <b>On the contrary</b>, in certain cases friction becomes a help necessary <b>instead of being</b> a difficulty causing only wear and losses.</div>
+                    <div class="exercise-ru">(Напротив, в некоторых случаях трение становится необходимой помощью, вместо того чтобы быть трудностью, вызывающей только износ и потери.)</div>
+                    <div class="exercise-analysis"><b>On the contrary</b> — устойчивое выражение (напротив, в отличие от); <b>instead of</b> — составной предлог (вместо того чтобы); **being** — герундий, Indefinite Active, функция: <i>Косвенное (предложное) дополнение</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">15. The aircraft carries 461 people <b>excluding</b> the crew and cabin staff.</div>
+                    <div class="exercise-ru">(Самолет перевозит 461 человека, исключая экипаж и бортпроводников).</div>
+                    <div class="exercise-analysis"><b>excluding</b> — производный предлог (исключая, за исключением).</div>
+                </div>
+            </div>
+
+            <div class="exercise-block">
+                <div class="exercise-title">Ex. 2. Fill in the blanks with the words from the box. Translate the sentences.</div>
+                
+                <div class="exercise-item">
+                    <div class="exercise-en">1. <b>As a matter of fact</b>, all the atoms were formed in the first few minutes of the universe existence.</div>
+                    <div class="exercise-ru">(На самом деле, все атомы сформировались в первые несколько минут существования Вселенной.)</div>
+                    <div class="exercise-analysis"><b>As a matter of fact</b> — устойчивое выражение (на самом деле, фактически).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">2. One of the difficulties in using transistors for producing optical devices is that transistor components are intended to conduct electricity, <b>at least</b> some of the time.</div>
+                    <div class="exercise-ru">(Одна из трудностей использования транзисторов для производства оптических приборов заключается в том, что компоненты транзисторов предназначены для проведения электричества, по крайней мере, иногда.)</div>
+                    <div class="exercise-analysis"><b>at least</b> — устойчивое выражение (по крайней мере).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">3. <b>In case</b> this electronic force is direct, the current is direct.</div>
+                    <div class="exercise-ru">(В случае, если эта электронная сила является постоянной, ток является постоянным.)</div>
+                    <div class="exercise-analysis"><b>In case</b> — составной союз (в случае, если).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">4. <b>As a matter of fact</b>, the method of connecting the armature and field winding of the series motor is exactly the same as for the corresponding generator.</div>
+                    <div class="exercise-ru">(На самом деле, метод соединения якоря и обмотки возбуждения двигателя последовательного возбуждения точно такой же, как для соответствующего генератора.)</div>
+                    <div class="exercise-analysis"><b>As a matter of fact</b> — устойчивое выражение (на самом деле, фактически).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">5. Steam may be passed into an engine to produce mechanical energy and the latter <b>in its turn</b> may drive a dynamo to produce electrical energy.</div>
+                    <div class="exercise-ru">(Пар может подаваться в двигатель для производства механической энергии, а последняя, в свою очередь, может приводить в действие динамо-машину для производства электрической энергии.)</div>
+                    <div class="exercise-analysis"><b>in its turn</b> — устойчивое выражение (в свою очередь).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">6. In 1819 Volta returned to his native town Como where he spent <b>the rest of</b> his life.</div>
+                    <div class="exercise-ru">(В 1819 году Вольта вернулся в свой родной город Комо, где провел остаток своей жизни.)</div>
+                    <div class="exercise-analysis"><b>the rest of</b> — устойчивое выражение (остаток чего-либо).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">7. <b>In dealing with</b> direct currents any potential difference in excess of five volts should be considered unsafe.</div>
+                    <div class="exercise-ru">(При работе с постоянными токами любую разность потенциалов, превышающую пять вольт, следует считать небезопасной.)</div>
+                    <div class="exercise-analysis"><b>In dealing with</b> — устойчивое выражение *to deal with* (иметь дело с, рассматривать); **dealing** — герундий, Indefinite Active, функция: <i>Обстоятельство (после предлога in)</i>.</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">8. <b>So far</b>, the data made scientists look for new conducting materials and for practical applications of the phenomenon.</div>
+                    <div class="exercise-ru">(До сих пор данные заставляли ученых искать новые проводящие материалы и практические применения этого явления.)</div>
+                    <div class="exercise-analysis"><b>So far</b> — устойчивое выражение (до сих пор, пока).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">9. <b>At least</b>, manufacturing of antiferromagnets has been quite complex and time-consuming.</div>
+                    <div class="exercise-ru">(По крайней мере, производство антиферромагнетиков было довольно сложным и трудоемким.)</div>
+                    <div class="exercise-analysis"><b>At least</b> — устойчивое выражение (по крайней мере).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">10. Electricity is used in every home <b>in addition to</b> its industrial applications.</div>
+                    <div class="exercise-ru">(Электричество используется в каждом доме в дополнение к его промышленным применениям.)</div>
+                    <div class="exercise-analysis"><b>in addition to</b> — составной предлог (в дополнение к, вдобавок к).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">11. Nowadays science is developing at a great pace. <b>Nevertheless</b>, progress in some areas remains slow and difficult.</div>
+                    <div class="exercise-ru">(В настоящее время наука развивается очень быстрыми темпами. Тем не менее, прогресс в некоторых областях остается медленным и трудным.)</div>
+                    <div class="exercise-analysis"><b>Nevertheless</b> — союз/наречие (тем не менее, однако).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">12. No single state should ensure its own security <b>at the expense of</b> another.</div>
+                    <div class="exercise-ru">(Ни одно государство не должно обеспечивать свою собственную безопасность за счет другого.)</div>
+                    <div class="exercise-analysis"><b>at the expense of</b> — устойчивое выражение (за счет, ценой).</div>
+                </div>
+                <div class="exercise-item">
+                    <div class="exercise-en">13. <b>Notwithstanding</b> the reductions the global threat posed by nuclear weapons has not subsided.</div>
+                    <div class="exercise-ru">(Несмотря на сокращения, глобальная угроза, исходящая от ядерного оружия, не уменьшилась.)</div>
+                    <div class="exercise-analysis"><b>Notwithstanding</b> — производный предлог (несмотря на, вопреки).</div>
                 </div>
             </div>
         </div>
